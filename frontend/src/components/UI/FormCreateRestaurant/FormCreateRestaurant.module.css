@@ -1,0 +1,19 @@
+.form-container {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid red;
+}
+
+.form-input-rows {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input-rows, label {
+  text-align: start;
+  padding: 2px;
+}
+
+.form-input-rows, input {
+  border-bottom: 1px solid gray;
+}

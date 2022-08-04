@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "restaurants",
+  "info": {
+    "singularName": "restaurant",
+    "pluralName": "restaurants",
+    "displayName": "Restaurant",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "description": {
+      "type": "richtext",
+      "required": false
+    },
+    "phone": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "country": {
+      "type": "string",
+      "required": false
+    },
+    "street": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "unique": false,
+      "required": false
+    },
+    "opening_hours": {
+      "type": "json"
+    },
+    "city": {
+      "type": "string",
+      "required": false
+    },
+    "website": {
+      "type": "string"
+    },
+    "price_level": {
+      "type": "string",
+      "required": false
+    },
+    "zip_code": {
+      "type": "string",
+      "required": false
+    }
+  }
+}
