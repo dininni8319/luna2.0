@@ -9,13 +9,16 @@ const Navbar = () => {
           </div>
           <ul className={styles['nav-ul']}>
             <li className={styles["nav-link"]}>
+              <a href="http://" target="_blank" alt="link">
               home
+              </a>
             </li>
             <li className={styles["nav-link"]}>
-              search
+              <a href="http://" target="_blank" alt="link">search</a>
+              
             </li>
             <li className={styles["nav-link"]}>
-              profile
+            <a href="http://" target="_blank" alt="link"> profile</a>
             </li>
             <li className={styles["nav-link"]}>
         

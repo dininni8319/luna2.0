@@ -5,6 +5,7 @@ import Navbar from './components/UI/Navbar/Navbar';
 import Header from './components/UI/Header/Header';
 import axios from 'axios';
 import './App.css';
+import Footer from './components/UI/Footer/Footer';
 
 function App() {
 
@@ -71,6 +72,7 @@ function App() {
             )  
           })}
         </section>
+        <Footer />
         <section className="form-row">
             {/* <FormCreateRestaurant 
               handleData={handleData}

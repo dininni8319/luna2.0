@@ -3,20 +3,20 @@ import style from './Card.module.css';
 const Card = ( { restaurant, id } ) => {
 
      return ( <section className={style["card-container"]}>
-                <div className={style["card-header"]}></div>
-                  <div className={style['card-row']}>
+              <div className={style["card-header"]}></div>
+              <div className={style['card-row']}>
                 <div>
                   <h3>{ restaurant?.name }</h3>
-                  <p>{ restaurant?.description }</p>
+                  {/* <p>{ restaurant?.description }</p> */}
                 </div>
                 <ul>
-                  <li>
+                  {/* <li>
                     { restaurant?.address }
-                  </li>
+                  </li> */}
                   <li>
                     { restaurant?.street }
                   </li>
-                  <li>
+                  {/* <li>
                     { restaurant?.zip_code }
                   </li>
                   <li>
@@ -30,7 +30,7 @@ const Card = ( { restaurant, id } ) => {
                   </li>
                   <li>
                     { restaurant?.website }
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </section>

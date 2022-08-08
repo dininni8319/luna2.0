@@ -16,7 +16,7 @@
 .nav-ul li:first-child{ 
   font-weight: bold;
 }
-.nav-link {
+.nav-link, a {
   text-transform: capitalize; 
   padding-left: 5px; 
   font-style: normal;
