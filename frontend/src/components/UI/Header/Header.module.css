@@ -1,0 +1,7 @@
+.header-container {
+  min-height: 35vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('./../../../assets/images/header-img.jpeg') ;
+}

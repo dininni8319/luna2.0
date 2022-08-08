@@ -1,6 +1,7 @@
 import style from './Card.module.css';
+
 const Card = ( { restaurant, id } ) => {
-  console.log(restaurant);
+
      return ( <section className={style["card-container"]}>
                 <div className={style["card-header"]}></div>
                   <div className={style['card-row']}>

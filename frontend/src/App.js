@@ -1,6 +1,8 @@
-import { useState, useEffect, useLayoutEffect } from 'react';
+import { useState, useEffect } from 'react';
 import FormCreateRestaurant from './components/UI/FormCreateRestaurant/FormCreateRestaurant';
 import Card from './components/UI/Card/Card';
+import Navbar from './components/UI/Navbar/Navbar';
+import Header from './components/UI/Header/Header';
 import axios from 'axios';
 import './App.css';
 
@@ -39,8 +41,6 @@ function App() {
         } else {
            alert('Something went wrong!')
         }
-
-        
       })
   }
 
@@ -61,23 +61,24 @@ function App() {
 
   return (
     <div className="App">
-        <section className="app-row">
-          { restaurants?.map( restaurant => {
-              console.log(restaurant.attributes);
+      <Navbar/>
+      <Header />
+        <section className="app-row background-main-color">
+          { restaurants.slice(0, 4)?.map( restaurant => {
+              
               return (
                 <Card restaurant={restaurant.attributes} id={restaurant.id} />
             )  
           })}
         </section>
         <section className="form-row">
-            <FormCreateRestaurant 
+            {/* <FormCreateRestaurant 
               handleData={handleData}
               restaurants={restaurants} 
               setRestaurantData={setRestaurantData}
               handleSubmit={handleSubmit}
-            />
+            /> */}
         </section>
-
     </div>
   );
 }

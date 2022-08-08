@@ -1,5 +1,13 @@
+:root {
+  --grayBorder: #F8F8F8;
+  --orangeColor: #E47D31;
+  --backGroundColor: #F2F2F2;
+}
 .App {
   text-align: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .App-logo {
@@ -12,9 +20,10 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.background-main-color {
+    background: var(--backGroundColor);
+}
 .App-header {
-  /* background-color: #282c34; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,7 +33,6 @@
   color: white;
   padding: 20px;
 }
-
 
 .card-restaurant {
   border: 1px solid gray;
@@ -37,7 +45,9 @@
 .app-row {
   padding: 20px 0;
   min-width: 100vw;
+  height: 50vh;
   display: flex;
+  justify-content: space-evenly;
   overflow-x: scroll;
 }
 
@@ -46,12 +56,4 @@
   align-items: center;
   justify-content: center;
   margin-top: 20px;
-}
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

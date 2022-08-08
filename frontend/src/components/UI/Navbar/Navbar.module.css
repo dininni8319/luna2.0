@@ -1,0 +1,26 @@
+.nav-container {
+  box-sizing: border-box;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid #F8F8F8;
+}
+
+.nav-ul {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-around;
+}
+.nav-ul li:first-child{ 
+  font-weight: bold;
+}
+.nav-link {
+  text-transform: capitalize; 
+  padding-left: 5px; 
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+}
