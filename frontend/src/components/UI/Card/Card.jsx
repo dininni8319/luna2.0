@@ -1,7 +1,7 @@
 import style from './Card.module.css';
 
 const Card = ( { restaurant, id } ) => {
-
+     console.log(restaurant);
      return ( <section className={style["card-container"]}>
               <div className={style["card-header"]}></div>
               <div className={style['card-row']}>
@@ -16,21 +16,7 @@ const Card = ( { restaurant, id } ) => {
                   <li>
                     { restaurant?.street }
                   </li>
-                  {/* <li>
-                    { restaurant?.zip_code }
-                  </li>
-                  <li>
-                    { restaurant?.price_level }
-                  </li>
-                  <li>
-                    { restaurant?.country }
-                  </li>
-                  <li>
-                    { restaurant?.email }
-                  </li>
-                  <li>
-                    { restaurant?.website }
-                  </li> */}
+                 {/* <img src={restauran} alt="" width='150px' height='200px'/> */}
                 </ul>
               </div>
             </section>

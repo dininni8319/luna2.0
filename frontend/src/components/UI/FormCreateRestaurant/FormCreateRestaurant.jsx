@@ -1,6 +1,6 @@
 import styles from './FormCreateRestaurant.module.css';
 
-const FormCreateRestaurant = ( { restaurantData, setRestaurantData , handleSubmit, handleData }) => {
+const FormCreateRestaurant = ( { restaurantData, setRestaurantData , handleSubmit, handleData, imageHandler }) => {
   return ( 
     <>
       <form onSubmit={handleSubmit} className={styles['form-container']}>
@@ -56,7 +56,13 @@ const FormCreateRestaurant = ( { restaurantData, setRestaurantData , handleSubmi
             <div className={styles['form-input-rows']}>
                 <input id="description" cols="30" rows="10" onChange={handleData} />
             </div>
-          
+            
+            {/* <div className={styles['form-input-rows']}>
+                <input
+                        type="file"
+                        onChange={(e) => imageHandler(e.target.files)}
+                />
+            </div> */}
             <button type="submit">Create A New Restaurant!</button>
           </div>
       </form>

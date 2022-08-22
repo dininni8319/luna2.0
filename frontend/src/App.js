@@ -10,7 +10,8 @@ import Footer from './components/UI/Footer/Footer';
 function App() {
 
   const [ restaurants, setRestaurant ] = useState([]);
-  
+  const [ image, setImage ] = useState([]);
+  console.log(restaurants, 'file upload');
   const [ restaurantData, setRestaurantData ] = useState({
     name: '',
     email: '',
@@ -24,8 +25,14 @@ function App() {
     description: '', 
     country: '',
   });
+  // let dataFile = {...restaurantData, image}
+  let data = { data : { ...restaurantData, image: image } }
   
-  let data = { data : { ...restaurantData } }
+  
+  console.log(restaurantData, 'restaurants');
+  const imageHandler = (file) => {
+    setImage(file[0]);
+  };
 
   const handleSubmit = async (e)  => {
     e.preventDefault();
@@ -72,15 +79,16 @@ function App() {
             )  
           })}
         </section>
-        <Footer />
         <section className="form-row">
-            {/* <FormCreateRestaurant 
+            <FormCreateRestaurant 
               handleData={handleData}
               restaurants={restaurants} 
               setRestaurantData={setRestaurantData}
               handleSubmit={handleSubmit}
-            /> */}
+              imageHandler={imageHandler}
+            />
         </section>
+        <Footer />
     </div>
   );
 }
