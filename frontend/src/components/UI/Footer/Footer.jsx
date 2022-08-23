@@ -6,7 +6,8 @@ import styles from './Footer.module.css';
 const Footer = () => {
   return ( 
   
-    <footer className={styles["footer-container"]}>
+    <footer>
+      <section className={styles["footer-container"]}>
         <ul className={styles["footer-ul-info"]}>
           <li>
             <a href="http://">About Us</a>
@@ -46,6 +47,10 @@ const Footer = () => {
               </a>
           </li>
         </ul>
+      </section>
+        <section className={styles['rights-title']}>
+          <p>© Copyright Luna 2018</p>
+        </section>
     </footer>
    );
 }

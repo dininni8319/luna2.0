@@ -4,7 +4,7 @@ import styles from './Navbar.module.css';
 const Navbar = () => {
   return ( 
         <nav className={styles['nav-container']}>
-          <div className="nav-logo">
+          <div className={styles["nav-logo"]}>
             <img src={Logo} alt="logo" />
           </div>
           <ul className={styles['nav-ul']}>

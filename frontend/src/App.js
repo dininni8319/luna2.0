@@ -80,13 +80,13 @@ function App() {
           })}
         </section>
         <section className="form-row">
-            <FormCreateRestaurant 
+            {/* <FormCreateRestaurant 
               handleData={handleData}
               restaurants={restaurants} 
               setRestaurantData={setRestaurantData}
               handleSubmit={handleSubmit}
               imageHandler={imageHandler}
-            />
+            /> */}
         </section>
         <Footer />
     </div>
